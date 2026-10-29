@@ -793,9 +793,7 @@
 // }
 // const bigarray =[];
 // console.log(removefast(bigarray));
-// // 
-
-
+// //
 
 // // قبل غير فعالة للبحث في مصفوفة مكررة
 // // مناقشة//////////
@@ -1489,31 +1487,27 @@
 // const { info : {instructor}} = userprofile;
 // console.log(" اسم المدرب المتداخل" + instructor);
 
-
-
 // // 197 استخدم عامل النشر لاستنساخ كائن
 
 // const clone = {...userprofile};
 // console.log(" copy from : " + clone.name);
-
-
 
 // // 198    لاستنسلخ كائن  استخدم object. assign
 // const clons = Object.assign({},userprofile);
 // console.log( " الاسم نسخة من object.assign : " + clons.name);
 
 // // 199      اكتب دالة تنفذ استساخاا عميقا لكتئن
-// function deepclone(obj) { 
+// function deepclone(obj) {
 // return JSON.parse(JSON.stringify(obj));
 // }
 // const deepcloneobj = deepclone(smartphon);
-// console.log("ok its copied"); 
+// console.log("ok its copied");
 // // 200 قارن بين سلوك الاستساخ السطحي والاستنساخ العميق
 // //  نسخ القيم الاساسية (نصوص او ارقام)
-// // كلا الاستنساخين ينسخها بشكل كامل ومنفصل 
-// // طرق التنفيذ مختلفة 
+// // كلا الاستنساخين ينسخها بشكل كامل ومنفصل
+// // طرق التنفيذ مختلفة
 // // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// اكواد رياضية 
+// اكواد رياضية
 // console.log(Math.PI);
 // // القيمة المطلقة
 // console.log(Math.abs(-7));
@@ -1523,13 +1517,13 @@
 // console.log(Math.floor(3.4));
 // // رقم عشوائي بين 0 و 1 وكثيرة الاستعمال
 // console.log(Math.random());
-// //  جبر الفواصل لاقرب رقم 
+// //  جبر الفواصل لاقرب رقم
 // console.log(Math.round(3.6));
 // console.log(Math.min(3.4, 10));
 // console.log(Math.max(3.4 ,12 ,15));
-// // الجذر التربيعي 
+// // الجذر التربيعي
 // console.log(Math.sqrt(16));
-// // للرقم الصحيح بدون فواصل 
+// // للرقم الصحيح بدون فواصل
 // console.log(Math.trunc(5.54865465));
 // للبحث عن obj داخل array/
 // const doctors = [
@@ -1538,20 +1532,20 @@
 // {name : "mazen" , age : 40},
 // ];
 // const result = doctors.find (function(doctor) {
-// return doctor.age > 30 
+// return doctor.age > 30
 // });
 // console.log(result);
 //  طرق طباعة ال ARRAY
-// الطريقة العادية 
+// الطريقة العادية
 // const numbers = [1,2,3,4,5];
 // for(let index =0 ; index < numbers.length ; index++){
 //   console.log( index,numbers[index]);
 // }
-//  الطريقة الثانية 
+//  الطريقة الثانية
 // for(let num of numbers){
 //   console.log(num);
 // }
-// الطريقة الثالة 
+// الطريقة الثالة
 // numbers.forEach(function(num , index){
 //    console.log(num ,index);
 // });
@@ -1573,13 +1567,13 @@
 // }).reverse();
 // console.log(doctors);
 // ////////////////////////////////////////////// method////////////////
-// للبحث عن الارقام كافة كقيمة موجبة 
+// للبحث عن الارقام كافة كقيمة موجبة
 // const numbers =[1,2,4,7,5,8];
 // const data = numbers.every(function(num){
 //   return num >  0;
 // });
 // console.log(data);
-// للبحث عن الارقام جزئيا 
+// للبحث عن الارقام جزئيا
 // const numbers =[1,2,-4,-7,5,8];
 // const data = numbers.some(function(num){
 //   return num >  0;
@@ -1601,13 +1595,13 @@
 // // الفرق
 // console.log(arryamessage.join(' ')
 // );
-// map an array 
+// map an array
 // const doctors = [
 // {name : "fady" , age : 30},
 // {name : "mouaad" , age : 25},
 // {name : "mazen" , age : 40},
 // ];
-// // لحظة دخول ال mapالى ال array  func السهمية لتبحث عن القيم والمفاتيح عند ال 
+// // لحظة دخول ال mapالى ال array  func السهمية لتبحث عن القيم والمفاتيح عند ال
 // const docName =doctors.map((doc) => doc.age);
 // console.log(docName);
 // استخدام طريقة لجمع الارقام عن طريق ال reduce///
@@ -1617,18 +1611,18 @@
 // sum = sum + num;
 // }
 // console.log(sum);
-// // الطريقة الجديدة للحساب 
+// // الطريقة الجديدة للحساب
 // const Reducesum = numbers.reduce(function(sum , num){
 //   return sum + num;
 
 // });
 // console.log(Reducesum);
 
-// التعرف على الاخطاء في جافا سكريبت 
-// refrancerror //////// غير معرف 
+// التعرف على الاخطاء في جافا سكريبت
+// refrancerror //////// غير معرف
 // let javascripe = true
 // console.log(javascripe);
-// // to fixed لطباعة الارقام بعد الفاصلة داخل الاقواس نحدد عدد الارقام الممراد طباعتها 
+// // to fixed لطباعة الارقام بعد الفاصلة داخل الاقواس نحدد عدد الارقام الممراد طباعتها
 // let pi =3.14578;
 // console.log(pi.toFixed(320));
 ///////////////////////////////////////custom error//////////////////////
@@ -1647,7 +1641,7 @@
 //   }
 //   return a/b;
 //  }
- 
+
 //  try {console.log(div(10,0));}
 //  catch(e){
 //   console.log(e);
@@ -1655,7 +1649,7 @@
 //   console.log(e.message);
 //  }
 //  finally{console.log("it's woking")};
-//  RegExp ///////     تتحقق من القيم كافة ان كانت مطابقة تماما ام لا  للتحقق ضمن شروط صارمة 
+//  RegExp ///////     تتحقق من القيم كافة ان كانت مطابقة تماما ام لا  للتحقق ضمن شروط صارمة
 // const regExp = / Yousef/;
 // console.log(regExp.test('hi i am Yousef '));
 // const regExp = / Yousef/;
@@ -1705,20 +1699,20 @@
 // header.style.fontSize = '2rem';
 // header.style.borderRadius = '15px'
 // // لتبديل الكلام ////////////////////
-// // header.innerHTML = `keloo : ${index}` بدل 
+// // header.innerHTML = `keloo : ${index}` بدل
 // header.textContent = 'center'
 // // للتحكم في الجدول //////////
 // let tbody = document.querySelector('tbody');
 // console.log(tbody);
 // // فحص المحتوى الموجود
 // console.log(tbody.children);
-// // فحص الاعداد الموجودة 
+// // فحص الاعداد الموجودة
 // console.log(tbody.childElementCount);
-// // طباعة المحتوى الاول 
+// // طباعة المحتوى الاول
 // console.log(tbody.children[1]);
 // // اضافة  عنصر html من داخل java script
 // tbody.children[1].innerHTML = '<span>test   222</span>';
-// //  طباعة اول واخر عنصر 
+// //  طباعة اول واخر عنصر
 // console.log(tbody.firstElementChild);
 // console.log(tbody.lastElementChild);
 // انشاء عناصر html وتاغات
@@ -1739,15 +1733,15 @@
 //           console.log(td2);
 //           tr.append(td1,td2);
 //           console.log(tr);
-//         //  \\\|||| سطر الاضافة 
+//         //  \\\|||| سطر الاضافة
 //           document.querySelector('tbody').append(tr);
-// // مهمة جدا جدا اعطاء اوامر او تحريك ماوس )انشاء الحدث مهم كثير للازرار والكثير 
-const clearBtn = document.querySelector('.clear-post');
+// // مهمة جدا جدا اعطاء اوامر او تحريك ماوس )انشاء الحدث مهم كثير للازرار والكثير
+// const clearBtn = document.querySelector('.clear-post');
 // clearBtn.addEventListener('dblclick',function(Event){
 //     console.log('hi am yosef')
 
 // });
-// clearBtn.addEventListener('mouseover',function(Event){
+// clearBtn.addEventListener('mousehover',function(Event){
 //     console.log('hi am yosef')
 
 // });
@@ -1767,4 +1761,55 @@ const clearBtn = document.querySelector('.clear-post');
 //     console.log('hi am yosef')
 
 // });
-//////////////////////////////////////////////////
+////////////////////////////////////////////////// هام جدا للتحكم في html على حسب الحدث
+// clearBtn.addEventListener("click", function(Event){
+//     console.log('hi am yosef')
+// //  لطباعة البكسل الذي تم الضغط عليه على مستوى الشاشة
+// console.log(Event.clientX);
+// console.log(Event.clientY);
+// // على مستوى العنصر نفسه
+// console.log(Event.offsetX);
+// console.log(Event.offsetY);
+// عندما يتم الضغط باستمرار على مفتاح alt مع الضغط على العنصر    النتيجة true
+// console.log(Event.altKey);
+// console.log(Event.shiftKey);
+// console.log(Event.type);
+// console.log(Event.target);
+// console.log(Event.target.id);
+// console.log(Event.target.className);
+// console.log(Event.target.innerHTML);
+// Event.target.style.backgroundColor ='black';
+// });
+// //////////////////////////// local storage
+// console.log(localStorage);
+// localStorage.setItem("name", "alaa");
+// let name = localStorage.getItem("name");
+// console.log(name);
+// // /////////////////////// remove localstorage
+// localStorage.setItem("age", 15);
+// localStorage.setItem("salary",500);
+// console.log(localStorage);
+// // للمسح الافرادي 
+// localStorage.removeItem('age');
+// // للمسح الكلي ل local storage
+// localStorage.clear();
+// console.log(localStorage);
+//      ///////// local storage تعامل مع الارقام
+// localStorage.setItem('age', 50);
+// let age =  Number(localStorage.getItem('age')) || 50;
+
+// console.log(age -5);
+//  localstorageتعامل مع ال object و array
+let user = { name :"yousef", age:25};
+// localStorage.setItem("person" , user);
+//   طريقة التحويل الى سترينغ للتخزين بدل obj
+localStorage.setItem("person" , JSON.stringify(user));
+
+let per = localStorage.getItem("person");
+// لارجاعها الى الاصل وطبعا مفردة 
+let x =JSON.parse(localStorage.getItem("person"));
+console.log(x);
+console.log("form localstorag" + per);
+// json بشكل عام اختصار للكلمات  صيغة لتبادل البيانات بشكل معين خفيفة وسهلة القراءة 
+// JSON عملها تحويل البيانات ال OBJCET AND ARRAY الى نص سترينغ بصيغة ال لان ال لوكال ستورج ملفات لا تقبل التخزين الى  نصوص  
+// JSON = JAVA script object Notation
