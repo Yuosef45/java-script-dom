@@ -1514,23 +1514,23 @@
 // // طرق التنفيذ مختلفة 
 // // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // اكواد رياضية 
-console.log(Math.PI);
-// القيمة المطلقة
-console.log(Math.abs(-7));
-// للاعلى لاقرب رقم
-console.log(Math.ceil(3.4));
-// لاقرب رقم للاسفل
-console.log(Math.floor(3.4));
-// رقم عشوائي بين 0 و 1 وكثيرة الاستعمال
-console.log(Math.random());
-//  جبر الفواصل لاقرب رقم 
-console.log(Math.round(3.6));
-console.log(Math.min(3.4, 10));
-console.log(Math.max(3.4 ,12 ,15));
-// الجذر التربيعي 
-console.log(Math.sqrt(16));
-// للرقم الصحيح بدون فواصل 
-console.log(Math.trunc(5.54865465));
+// console.log(Math.PI);
+// // القيمة المطلقة
+// console.log(Math.abs(-7));
+// // للاعلى لاقرب رقم
+// console.log(Math.ceil(3.4));
+// // لاقرب رقم للاسفل
+// console.log(Math.floor(3.4));
+// // رقم عشوائي بين 0 و 1 وكثيرة الاستعمال
+// console.log(Math.random());
+// //  جبر الفواصل لاقرب رقم 
+// console.log(Math.round(3.6));
+// console.log(Math.min(3.4, 10));
+// console.log(Math.max(3.4 ,12 ,15));
+// // الجذر التربيعي 
+// console.log(Math.sqrt(16));
+// // للرقم الصحيح بدون فواصل 
+// console.log(Math.trunc(5.54865465));
 // للبحث عن obj داخل array/
 // const doctors = [
 // {name : "fady" , age : 30},
@@ -1665,3 +1665,106 @@ console.log(Math.trunc(5.54865465));
 // console.log(str.search(regExp));
 // console.log(str.replace(regExp , ' mazen'));
 // /////////////////////////////////////////// DOM  DOM DOM ///////////////////////////
+// console.log(document);
+// console.log(document.all);
+// console.log(document.all.length);
+// console.log(document.head);
+// console.log(document.body);
+// console.log(document.characterSet);
+// console.log(document.contentType);
+// console.log(document.body.className);
+// console.log(document.body.classList);
+// console.log(document.forms);
+// console.log(document.forms[0].className);
+// let headers = document.getElementsByTagName('h1');
+// headers = Array.from(headers);
+// headers.forEach((header , index) => {
+// console.log(header.className);
+// header.style.color= '#2de2e6'
+// header.style.background ='green'
+// header.style.textAlign = 'center'
+// header.innerHTML = `keloo : ${index}`
+// header.style.borderRadius = '15px'
+// header.style.margin = '10px'
+// header.style.padding = '10px'
+// header.style.marginLift = '10px'
+// // });
+// let header = document.getElementById('add-post-title-id');
+// header.style.color = 'green';
+// header.style.backgroundColor= 'black';
+// header.style.textAlign = 'center';
+// header.style.fontFamily = 'bold';
+// header.style.fontSize = '2rem';
+// header.style.borderRadius = '15px'
+// للتحديد بين ال id و class///////
+// let header = document.querySelector('#add-post-title-id');
+// header.style.color = 'green';
+// header.style.backgroundColor= 'black';
+// header.style.textAlign = 'center';
+// header.style.fontFamily = 'bold';
+// header.style.fontSize = '2rem';
+// header.style.borderRadius = '15px'
+// // لتبديل الكلام ////////////////////
+// // header.innerHTML = `keloo : ${index}` بدل 
+// header.textContent = 'center'
+// // للتحكم في الجدول //////////
+// let tbody = document.querySelector('tbody');
+// console.log(tbody);
+// // فحص المحتوى الموجود
+// console.log(tbody.children);
+// // فحص الاعداد الموجودة 
+// console.log(tbody.childElementCount);
+// // طباعة المحتوى الاول 
+// console.log(tbody.children[1]);
+// // اضافة  عنصر html من داخل java script
+// tbody.children[1].innerHTML = '<span>test   222</span>';
+// //  طباعة اول واخر عنصر 
+// console.log(tbody.firstElementChild);
+// console.log(tbody.lastElementChild);
+// انشاء عناصر html وتاغات
+/*     <tr>
+            <td class="post">post1</td>
+//             <td><span class="fa fa-times float-right pr-2"></span></td>
+//           </tr>*/
+//           const tr = document.createElement('tr');
+//           const td1 =document.createElement('td');
+//           td1.className = 'post';
+//           td1.innerHTML = 'post 6';
+//           td1.setAttribute('title' , 'post-title-6');
+//           console.log(td1);
+//           const td2 =document.createElement('td');
+//           const span =document.createElement('span');
+//           span.className = 'fa fa-times float-right pr-3';
+//           td2.append(span);
+//           console.log(td2);
+//           tr.append(td1,td2);
+//           console.log(tr);
+//         //  \\\|||| سطر الاضافة 
+//           document.querySelector('tbody').append(tr);
+// // مهمة جدا جدا اعطاء اوامر او تحريك ماوس )انشاء الحدث مهم كثير للازرار والكثير 
+const clearBtn = document.querySelector('.clear-post');
+// clearBtn.addEventListener('dblclick',function(Event){
+//     console.log('hi am yosef')
+
+// });
+// clearBtn.addEventListener('mouseover',function(Event){
+//     console.log('hi am yosef')
+
+// });
+// clearBtn.addEventListener("mousedown",function(Event){
+//     console.log('hi am yosef')
+
+// });
+// clearBtn.addEventListener("mowuseup",function(Event){
+//     console.log('hi am yosef')
+
+// });
+// clearBtn.addEventListener("mousemove", function(Event){
+//     console.log('hi am yosef')
+
+// });
+// clearBtn.addEventListener("mouseenter", function(Event){
+//     console.log('hi am yosef')
+
+// });
+//////////////////////////////////////////////////
